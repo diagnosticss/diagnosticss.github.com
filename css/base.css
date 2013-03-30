@@ -1,0 +1,242 @@
+html, body, h1, h2, h3, h4, ul, li, ol, dl, dt, dd, p, form, fieldset, label, img, table {
+  padding: 0; margin: 0; font-size: 100%; font-weight: normal; border: 0
+}
+
+html {min-height: 100%}
+
+body {
+  min-height: 100%;
+  color: #f0f0f0;
+  font: normal normal 100%/1.4 PT Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: #a19fa4 url(../i/bg.jpg) center center no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+article, header, footer, aside {
+  display: block
+}
+
+/* links */
+a, a:visited, a:hover {color: #02b4e0}
+a:hover, a:active {color: #d04000}
+
+/* headers, paragraphs */
+h1, h2, h3, h4 {margin: .5em 0 1em; color: #f9f9f9}
+p {margin: .5em 0}
+h1 {font-size: 2em}
+h2 {font-size: 150%}
+h3 {font-size: 125%}
+h4 {font-size: 110%}
+
+/* lists */
+ul, ol {list-style-position: inside; padding-left: 24px}
+ul {list-style-type: square}
+dd {padding-left: 32px}
+
+h2+p, h3+p {
+  margin: -1em 0 1.5em;
+}
+
+pre, code {
+  font-family: Monaco, lucida console, bitstream vera sans mono, monospace;
+  font-size: .85em;
+  font-variant: normal;
+}
+
+pre code {
+  font-size: 12px;
+  display: block;
+}
+
+#page {
+  width: 690px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+}
+
+#page header {
+  overflow: hidden;
+  padding: 20px 25px 18px;
+  margin: 0 350px 20px 0;
+  width: 290px;
+  background: #ce4b41;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 125%;
+  letter-spacing: .05em;
+}
+
+#page header a, #page header a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+#page header a:hover {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#page header h1 {
+  margin-bottom: .5em;
+}
+
+#page .examples {
+  float: right;
+  width: 330px;
+  position: relative;
+  height: 610px;
+}
+
+.examples ul {
+  list-style: none outside;
+}
+
+.examples ul li {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+}
+
+.examples ul li img {
+  display: block;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#page .contents, #page .try-it {
+  width: 290px;
+  margin: 0 350px 20px 0;
+  background: #7bc0a1;
+  padding: 20px 25px 18px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+#page .contents p:first-child {
+  font-size: 125%;
+}
+
+#page .contents ul {
+  margin: 0 0 10px;
+}
+
+#page .try-it {
+  background: #362430;
+}
+
+#page .try-it p:last-child {
+  margin-bottom: 10px;
+}
+
+.super-bookmarklet, .super-bookmarklet:visited {
+  display: inline-block;
+  padding: .1em .5em;
+  background: #02b4e0;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-shadow: 0 1px rgba(0, 0, 0, .3);
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+#page footer {
+  padding: 2em 0 1em;
+  font-size: 75%;
+  color: #ddd;
+}
+
+/* animations */
+.examples ul li:last-child {
+  opacity: 1;
+  -webkit-animation: cyclelast 28s linear infinite;
+  -moz-animation: cyclelast 28s linear infinite;
+  animation: cyclelast 28s linear infinite
+}
+
+.examples ul li:nth-child(3) {
+  opacity: 0;
+  -webkit-animation: cyclethird 28s linear infinite;
+  -moz-animation: cyclethird 28s linear infinite;
+  animation: cyclethird 28s linear infinite
+}
+
+.examples ul li:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: cyclesecond 28s linear infinite;
+  -moz-animation: cyclesecond 28s linear infinite;
+  animation: cyclethird 28s linear infinite
+}
+
+.examples ul li:first-child {
+  opacity: 0;
+  -webkit-animation: cyclefirst 28s linear infinite;
+  -moz-animation: cyclefirst 28s linear infinite;
+  animation: cyclethird 28s linear infinite
+}
+
+
+@-webkit-keyframes cyclelast {
+  0%, 10%, 90%, 100% {opacity: 1}
+  15%, 85% {opacity: 0}
+}
+
+@-moz-keyframes cyclelast {
+  0%, 10%, 90%, 100% {opacity: 1}
+  15%, 85% {opacity: 0}
+}
+
+@keyframes cyclelast {
+  0%, 10%, 90%, 100% {opacity: 1}
+  15%, 85% {opacity: 0}
+}
+
+
+
+@-webkit-keyframes cyclethird {
+  15%, 35% {opacity: 1}
+  0%, 10%, 40%, 100% {opacity: 0}
+}
+
+@-moz-keyframes cyclethird {
+  15%, 35% {opacity: 1}
+  0%, 10%, 40%, 100% {opacity: 0}
+}
+
+@keyframes cyclethird {
+  15%, 35% {opacity: 1}
+  0%, 10%, 40%, 100% {opacity: 0}
+}
+
+
+
+@-webkit-keyframes cyclesecond {
+  40%, 60% {opacity: 1}
+  0%, 35%, 65%, 100% {opacity: 0}
+}
+
+@-moz-keyframes cyclesecond {
+  40%, 60% {opacity: 1}
+  0%, 35%, 65%, 100% {opacity: 0}
+}
+
+@keyframes cyclesecond {
+  40%, 60% {opacity: 1}
+  0%, 35%, 65%, 100% {opacity: 0}
+}
+
+
+@-webkit-keyframes cyclefirst {
+  65%, 85% {opacity: 1}
+  0%, 60%, 90%, 100% {opacity: 0}
+}
+
+@-moz-keyframes cyclefirst {
+  65%, 85% {opacity: 1}
+  0%, 60%, 90%, 100% {opacity: 0}
+}
+
+@keyframes cyclefirst {
+  65%, 85% {opacity: 1}
+  0%, 60%, 90%, 100% {opacity: 0}
+}

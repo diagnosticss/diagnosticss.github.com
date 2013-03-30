@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" />
+<head>
+  <meta charset="UTF-8" />
+  <title>DiagnostiCSS // Visually detect any potentially invalid or inaccessible HTML markup</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/base.css" media="screen, projection" />
+</head>
+<body>
+  <article id="page">
+    <aside class="examples">
+      <ul>
+        <li><img src="i/examples/github_mobile.jpg" alt="Example #3 from github mobile" /></li>
+        <li><img src="i/examples/vk2.jpg" alt="Example #2 from vk" /></li>
+        <li><img src="i/examples/fs.jpg" alt="Example #0 from flatstack.com" /></li>
+        <li><img src="i/examples/vk1.jpg" alt="Example #1 from vk" /></li>
+      </ul>
+    </aside>
+    <header>
+      <h1><a href="http://github.com/fs/diagnosticss">DiagnostiCSS</a></h1>
+      <p>Visually detect any potentially invalid or inaccessible HTML markup<a href="#fn-1">*</a></p>
+    </header>
+    <div class="contents">
+      <p>DiagnostiCSS highlights the following problems within markup:</p>
+      <ul>
+        <li>inline styles</li>
+        <li>invalid links</li>
+        <li>empty elements</li>
+        <li>elements missing required attributes</li>
+        <li>deprecated elements</li>
+      </ul>
+    </div>
+    <div class="try-it">
+      <h2>Use it in your project</h2>
+      <p>
+        Good news everyone!
+        DiagnostiCSS proudly supports <a href="https://github.com/fs/diagnosticss#installation">Rails</a>
+        and any other <a href="https://github.com/fs/diagnosticss#sinatra">Rack-compatible framework</a>.
+      </p>
+      <h2>Use it everywhere</h2>
+      <p>
+        Just drag the
+        <a href="javascript:(function(){dcss=document.createElement('LINK');dcss.href='http://fs.github.com/diagnosticss/css/diagnosticss.css';dcss.rel='stylesheet';dcss.media='all';document.body.appendChild(dcss);})();"
+        class="super-bookmarklet" title="DiagnostiCSS">
+          DiagnostiCSS
+        </a>
+        link to your bookmarks toolbar to apply it on any page.
+      </p>
+    </div>
+    <footer>
+      <p id="fn-1">
+        * &mdash; like a PRO &trade;
+      </p>
+    </footer>
+  </article>
+</body>
+</html>
