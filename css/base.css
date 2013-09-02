@@ -144,6 +144,18 @@ pre code {
   padding: 2em 0 1em;
   font-size: 75%;
   color: #ddd;
+  overflow: hidden;
+}
+
+#page footer p {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.share-btns {
+  width: 50%;
+  float: left;
 }
 
 /* animations */
