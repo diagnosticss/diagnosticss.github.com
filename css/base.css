@@ -159,8 +159,6 @@ pre code {
   float: left;
 }
 
-.is-chrome-extension-installed .chrome-extension-wrap {display: none}
-
 /* animations */
 .examples ul li:last-child {
   opacity: 1;
