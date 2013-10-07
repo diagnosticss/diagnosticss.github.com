@@ -129,7 +129,8 @@ pre code {
   margin-bottom: 10px;
 }
 
-.super-bookmarklet, .super-bookmarklet:visited {
+.super-bookmarklet, .super-bookmarklet:visited,
+.super-extension, .super-extension:visited {
   display: inline-block;
   padding: .1em .5em;
   background: #02b4e0;
@@ -157,6 +158,8 @@ pre code {
   width: 50%;
   float: left;
 }
+
+.is-chrome-extension-installed .chrome-extension-wrap {display: none}
 
 /* animations */
 .examples ul li:last-child {

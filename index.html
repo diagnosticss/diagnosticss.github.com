@@ -6,6 +6,7 @@
   <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/base.css" media="screen, projection" />
   <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ekpmkpffmmchjaopplcmdadmdhibpmdi" />
 </head>
 <body>
   <article id="page">
@@ -46,6 +47,19 @@
         </a>
         link to your bookmarks toolbar to apply it on any page.
       </p>
+      <div class="chrome-extension-wrap">
+        <h2>Chrome Extension</h2>
+        <p>
+          Yep. This is it.
+          Just
+          <a
+            href="https://chrome.google.com/webstore/detail/diagnosticss/ekpmkpffmmchjaopplcmdadmdhibpmdi"
+            onclick="javascript: chrome.webstore.install(); return false;"
+            class="super-extension">
+            install
+          </a> it.
+        </p>
+      </div>
     </div>
     <footer>
       <div class="share-btns">
@@ -69,6 +83,11 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+  </script>
+  <script>
+    if (chrome.app.isInstalled) {
+      document.body.className += 'is-chrome-extenstion-installed';
+    }
   </script>
 </body>
 </html>
