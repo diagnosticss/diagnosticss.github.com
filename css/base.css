@@ -9,7 +9,6 @@ body {
   color: #f0f0f0;
   font: normal normal 100%/1.4 PT Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
   background: #a19fa4 url(../i/bg.jpg) center center no-repeat;
-  -moz-background-size: cover;
   background-size: cover;
 }
 
@@ -61,7 +60,6 @@ pre code {
   margin: 0 350px 20px 0;
   width: 290px;
   background: #ce4b41;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   font-size: 125%;
   letter-spacing: .05em;
@@ -99,7 +97,6 @@ pre code {
 
 .examples ul li img {
   display: block;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -109,7 +106,6 @@ pre code {
   margin: 0 350px 20px 0;
   background: #7bc0a1;
   padding: 20px 25px 18px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -134,7 +130,6 @@ pre code {
   display: inline-block;
   padding: .1em .5em;
   background: #02b4e0;
-  -moz-border-radius: 4px;
   border-radius: 4px;
   text-shadow: 0 1px rgba(0, 0, 0, .3);
   text-decoration: none;
